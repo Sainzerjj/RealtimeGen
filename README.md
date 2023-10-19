@@ -1,1 +1,3 @@
 # AI-painting
+
+Recent advances in AIGC technology enable the rapid generation of high-quality images and draw the attention from painters. However, integrating the end-to-end image generation principle with the step-by-step human painting process remains challenging. Existing research has revealed the limitations of fully automated technology for professionals. We designed **RealtimeGen**, an interventable interactive image generation tool. In fact, it can be used for Adobe Photoshop. We notice the intrinsic step-by-step principle behind diffusion models, an advanced generation technology. By exposing the full generation process, RealtimeGen allows painters to integrate both AI generation and human painting process.
