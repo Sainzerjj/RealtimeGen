@@ -9,13 +9,13 @@ The algorithm consists of two main stages: *normal generation* and *edited gener
 We have developed a Gradio interface that achieves this project, enabling users to easily and quickly try it out. Additionally, it can be utilized in Adobe Photoshop 2023. Of course, our goal is to enable free editing by integrating this algorithm as a Photoshop plugin. Furthermore, we offer both front-end demo and backend API call methods built on the FastAPI for reference. We also provide the *historical record function* for easy viewing and modification of all historical images. Our code is compatible with various Stable Diffusion model series, such as SDXL, SD2, and SDV1.5. *The plugin applied in Adobe Photoshop will come sonn !!!*
 
 ## Illustration
-* **app.py** is a Gradio application that yields and visualizes preview images including denoised prediction $\tilde I_0^t$ and intermediate generated image $\hat I_t$ from a generator function while the pipeline is in progress. The UI is directly derived from Stability AI's Stable Diffusion Demo.
-* **preview_decoder.py** provides the fast latent-to-RGB decoder function.
-* **item.py** provides two request classes (**Item_ori** and **Item_edit**) used to store all the input form required for generating by the backend SD model.
-* **back_utils.py** provides the necessary tool methods for backend generation, such as convert_image_to_base64, convert_base64_to_image, save_img, read_img.
-* **client.py** provides a simple client demo which is used to send and receive requests to the backend API.
-* **generator_pipeline.py** provides a DiffusionPipeline with a generate method to yield the latent data at each step inherited from StableDiffusionPipeline. It is nearly a strict refactoring of the StableDiffusionPipeline in 🧨diffusers 0.19.
-* **server.py** provides the backend processing code based on 🧨FastAPI. It is responsible for receiving front-end requests, parsing the requests into proper input, calling the backend SD model, and returning the processed output results to the front-end.
+* `app.py` is a Gradio application that yields and visualizes preview images including denoised prediction $\tilde I_0^t$ and intermediate generated image $\hat I_t$ from a generator function while the pipeline is in progress. The UI is directly derived from Stability AI's Stable Diffusion Demo.
+* `preview_decoder.py` provides the fast latent-to-RGB decoder function.
+* `item.py` provides two request classes (**Item_ori** and **Item_edit**) used to store all the input form required for generating by the backend SD model.
+* `back_utils.py` provides the necessary tool methods for backend generation, such as convert_image_to_base64, convert_base64_to_image, save_img, read_img.
+* `client.py` provides a simple client demo which is used to send and receive requests to the backend API.
+* `generator_pipeline.py` provides a DiffusionPipeline with a generate method to yield the latent data at each step inherited from StableDiffusionPipeline. It is nearly a strict refactoring of the StableDiffusionPipeline in 🧨diffusers 0.19.
+* `server.py` provides the backend processing code based on 🧨FastAPI. It is responsible for receiving front-end requests, parsing the requests into proper input, calling the backend SD model, and returning the processed output results to the front-end.
   
 ## Run
 ### Gradio
