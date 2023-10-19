@@ -27,11 +27,10 @@ python app.py
 ```
 python app.py
 ```
-3. Start the back-end
+2. Start the back-end and front-end
 ```
 python server.py
 ```
-5. Start the front-end
 ```
 python client.py
 ```
