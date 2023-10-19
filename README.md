@@ -36,8 +36,8 @@ python server.py
 python client.py
 ```
 ## Display
-![aaa](https://github.com/Sainzerjj/RealtimeGen/raw/master/display/gradio_app.png)  
-![bbb](https://github.com/Sainzerjj/RealtimeGen/raw/master/display/normal_ps.png)
-![ccc](https://github.com/Sainzerjj/RealtimeGen/raw/master/display/edited_ps.png)  
-![ddd](https://github.com/Sainzerjj/RealtimeGen/raw/master/display/panel.png)  
-![eee](https://github.com/Sainzerjj/RealtimeGen/raw/master/display/show.png)  
+![aaa](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/gradio_app.PNG)  
+![bbb](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/normal_ps.jpg)
+![ccc](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/edited_ps.jpg)  
+![ddd](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/panel.jpg)  
+![eee](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/show.jpg)  
