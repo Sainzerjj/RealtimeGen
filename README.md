@@ -37,7 +37,5 @@ python client.py
 ```
 ## Display
 ![aaa](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/gradio_app.PNG)  
-![bbb](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/normal_ps.jpg)
-![ccc](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/edited_ps.jpg)  
+![bbb](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/normal_ps.jpg) 
 ![ddd](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/panel.jpg)  
-![eee](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/show.jpg)  
