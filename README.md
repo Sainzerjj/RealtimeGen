@@ -1,6 +1,6 @@
 # RealtimeGen for AI-painting based on Stable Diffuison
 
-*The plugin could applied in Adobe Photoshop have come now !!!*
+### *The plugin could applied in Adobe Photoshop have come now !!!*
 
 ## Display
 ![gradio](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/gradio_app.PNG)  
