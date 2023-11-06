@@ -1,5 +1,7 @@
 # RealtimeGen for AI-painting based on Stable Diffuison
 
+*The plugin could applied in Adobe Photoshop have come now !!!*
+
 ## Display
 ![gradio](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/gradio_app.PNG)  
 ![PS](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/normal_ps.jpg) 
@@ -10,7 +12,7 @@ Recent advances in AIGC technology enable the rapid generation of high-quality i
 ## Introduction
 The algorithm consists of two main stages: *normal generation* and *edited generation*. In the normal generation stage, we can preview images of Stable Diffusion's intermediate stages (denoised prediction $\tilde I_0^t$ and intermediate generated image $\hat I_t$) using a fast approximation to visualize the low-resolution (64px) latent state. At the end of the normal generation stage, we can choose to download and edit the denoised prediction $\tilde I_0^t$ image at any desired time step. The edited image can then be re-encoded and noised at any timestep to produce $\tilde z_t$ for the edited generation stage, which allows for controlled generation. Notably, this idea is closely related to the paper [Universal Guidance for Diffusion Models(CVPR 2023)](https://arxiv.org/pdf/2302.07121.pdf). For future improvements, we discover that if the edited image, after being noised and encoded, remains same with the initial $\hat z_t$, the noise added to the edited image could become deterministic rather than randomly initialized. Taking DDIM as an example, the added noise can be represented as $\tilde \epsilon = \epsilon_{\theta}(z_t, t) - \sqrt{\alpha_t/(1 - \alpha_t)} \Delta z_0$, where $\Delta z_0$ denotes the corresponding change. This approach may offer advantages in preserving the structure and elements of the original image.
 
-We have developed a Gradio interface that achieves this project, enabling users to easily and quickly try it out. Additionally, it can be utilized in Adobe Photoshop 2023. Of course, our goal is to enable free editing by integrating this algorithm as a Photoshop plugin. Furthermore, we offer both front-end demo and backend API call methods built on the FastAPI for reference. We also provide the *historical record function* for easy viewing and modification of all historical images. Our code is compatible with various Stable Diffusion model series, such as SDXL, SD2, and SDV1.5. *The plugin applied in Adobe Photoshop will come sonn !!!*
+We have developed a Gradio interface that achieves this project, enabling users to easily and quickly try it out. Additionally, it can be utilized in Adobe Photoshop 2023. Of course, our goal is to enable free editing by integrating this algorithm as a Photoshop plugin. Furthermore, we offer both front-end demo and backend API call methods built on the FastAPI for reference. We also provide the *historical record function* for easy viewing and modification of all historical images. Our code is compatible with various Stable Diffusion model series, such as SDXL, SD2, and SDV1.5. 
 
 ## Illustration
 * `app.py` is a Gradio application that yields and visualizes preview images including denoised prediction $\tilde I_0^t$ and intermediate generated image $\hat I_t$ from a generator function while the pipeline is in progress. The UI is directly derived from Stability AI's Stable Diffusion Demo.
@@ -44,5 +46,4 @@ python client.py
 
 RealtimeGen only supports PhotoShop 2021 or higher. Place the folder **FishReactCEP** in the PS **extensions** directory, e.g. C:\Promgram Files(x86)\Common Files\Adobe\CEP\extensions\. Just restart PS and try it !
 
-![Operation(https://github.com/Sainzerjj/RealtimeGen/blob/master/display/operation.PNG)  
-
+![Operation](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/operation.png)
