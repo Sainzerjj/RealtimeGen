@@ -1,0 +1,11 @@
+{
+    "hashcode": "1693723859564",
+    "text": "A cute little white cat",
+    "samples": 1,
+    "steps": 5,
+    "scale": 7.5,
+    "seed": 1024,
+    "width": 768,
+    "height": 768,
+    "scheduler_dd": "DDIM"
+}

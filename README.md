@@ -1,7 +1,7 @@
 # RealtimeGen for AI-painting based on Stable Diffuison
 
 ## Display
-![gradio](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/gradio_app.PNG)  
+![gradio](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/gradio_app.PNG)  
 ![PS](https://github.com/Sainzerjj/RealtimeGen/blob/master/display/normal_ps.jpg) 
 
 ## Abstract
@@ -39,4 +39,10 @@ python server.py
 ```
 python client.py
 ```
+
+### PS （Windows）
+
+RealtimeGen only supports PhotoShop 2021 or higher. Place the folder **FishReactCEP** in the PS **extensions** directory, e.g. C:\Promgram Files(x86)\Common Files\Adobe\CEP\extensions\. Just restart PS and try it !
+
+![Operation(https://github.com/Sainzerjj/RealtimeGen/blob/master/display/operation.PNG)  
 

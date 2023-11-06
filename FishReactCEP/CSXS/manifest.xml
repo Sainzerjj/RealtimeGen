@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="5.0" ExtensionBundleId="FishReactCEP" ExtensionBundleVersion="1.0.0" ExtensionBundleName="test-panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ExtensionList>
+        <Extension Id="FishReactCEP" Version="1.0.0"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <!-- Photoshop >= CC2018 -->
+            <Host Name="PHXS" Version="19.0"/>
+            <Host Name="PHSP" Version="19.0"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="6.0"/>
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="FishReactCEP">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./jsx/init.jsx</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-nodejs</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>FishReactCEP</Menu>
+                    <Geometry>
+                        <Size>
+                            <Width>350</Width>
+                            <Height>570</Height>
+                        </Size>
+                        <MaxSize>
+                            <Width>1000</Width>
+                            <Height>1000</Height>
+                        </MaxSize>
+                        <MinSize>
+                            <Width>350</Width>
+                            <Height>570</Height>
+                        </MinSize>
+                    </Geometry>
+                    <Icons>
+                        <Icon Type="Normal">./icons/app.png</Icon>
+                        <Icon Type="RollOver">./icons/app.png</Icon>
+                        <Icon Type="DarkNormal">./icons/app.png</Icon>
+                        <Icon Type="DarkRollOver">./icons/app.png</Icon>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
